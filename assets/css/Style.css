@@ -1,0 +1,264 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #333333; /* Couleur de fond du corps du site (blanc par défaut) */
+}
+
+header.background {
+    height: 125px; /* Augmente la hauteur du header à 150 pixels (ajustez selon vos besoins) */
+    background-color: #141414;
+    padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centre horizontalement le contenu */
+  margin-left: 230px;
+}
+
+
+.logocrypto1 {
+  cursor: pointer;
+  display: flex;
+  width: 5em;
+}
+
+.logoX {
+  display: flex;
+  cursor: pointer;
+  width: 3em;
+}
+
+.logodiscord {
+  cursor: pointer;
+  display: flex;
+  width: 3em;
+}
+
+
+
+.nav {
+    margin: auto;
+}
+
+.menu {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    margin: 0;
+}
+
+.menu_item {  /* Menu Design*/
+    margin: 35px 10px; /* Ajoute une marge supérieure pour descendre les éléments <li> */
+    background: #ffa77b;
+    border-radius: 0.9em;
+    cursor: pointer; 
+    display: flex;  
+    
+    
+
+}
+
+/* .menu_item.communauté {
+    justify-content: flex-start;
+    display: flex;
+    border-radius: 0.9em;
+
+} */
+
+.menu_item_text { /* Menu Texte */
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "coolvetica rg", sans-serif;
+    font-size: 1.1em;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: flex;
+    
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    padding: 1px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-family: "coolvetica rg", sans-serif;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    border-radius: 1em; 
+    text-emphasis: none;
+    justify-content: center;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 1em; 
+  }
+  
+
+
+.dropdown_header_icon { /* flèche déroulant "Communauté */
+    font-size: 20px;
+    position: relative;
+    right: 0%;
+    transform: rotate(0deg);
+    transition: 0.2s ease-in-out all;
+
+}
+
+.communauté:hover .dropdown_header_icon {
+    transform: rotate(180deg);
+}
+
+.communauté:hover .dropdown {
+    display: block;
+    
+}
+
+.communauté a {
+    display: flex;
+}
+
+.logo_search {
+
+}
+
+.box {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  margin-right: 20em;
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  padding: 10px 15px;
+}
+
+.box:hover input {
+  width: 400px;
+}
+
+.box input {
+  width: 0;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  transition: 0.8s;
+  background: transparent;
+}
+
+.box a .material-icons {
+  color: #ffa77b;
+  font-size: 25px;
+  padding-top: 10px
+}
+
+/* Supprimez les classes logo-container, discord-container et twitter-container */
+
+/* Ajoutez ces styles pour aligner les éléments à l'intérieur de chaque div */
+.twitter-container,
+.discord-container {
+  display: flex;
+  align-items: center;
+}
+
+
+/*.twitter-container .dropdown_text,
+.discord-container .dropdown_text {
+  margin-right: 25px; 
+} 
+*/
+
+.twitter-container .dropdown_text,  /* Pour centrer verticalement le texte */
+.discord-container .dropdown_text {
+  display: flex;
+  align-items: center;
+  font-family: "coolvetica rg", sans-serif;
+  font-size: 20px;
+  color: #7472ff;
+  
+}
+
+
+.twitter-container:hover {
+  background: rgb(223, 223, 223);
+  border: transparent;
+  border-radius: 1em;
+}
+
+.discord-container:hover {
+  background: rgb(223, 223, 223);
+  border: transparent;
+  border-radius: 0.9em;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+h1, h2 {
+   text-align: left;
+   margin-top: 80px;
+   padding-left: 250px;
+   font-family: "coolvetica rg",  sans-serif;
+   color: #ffffff;
+}
+
+body {
+  text-align: center;
+}
+
+.mannft {
+  margin: 0 auto;
+  max-width: 20%;
+  height: auto;
+  border-radius: 2em;
+  display: block;
+}
+
+.bodycontent {
+  text-align: center;
+  margin-top: 80px;
+}
+
+
