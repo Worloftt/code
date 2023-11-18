@@ -3,38 +3,87 @@ html, body {
     padding: 0;
     background-color: #333333; /* Couleur de fond du corps du site (blanc par défaut) */
 }
-
-header.background {
-    height: 125px; /* Augmente la hauteur du header à 150 pixels (ajustez selon vos besoins) */
-    background-color: #141414;
-    padding: 0;
+p{
+  margin: 0;
 }
 
+  .background {
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.background-flex{
+  display: flex;
+  width: 1436px;
+  align-items: center;
+}
+.container_left{
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+
+}
+
+.container_left-item{
+  cursor: pointer;
+  margin-left: 100px;
+  gap: 50px;
+  width: 600px;
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "coolvetica rg", sans-serif;
+  font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container_right{
+  display: flex;
+  justify-content: center;
+  flex:1;
+
+}
+
+
+.communauté{
+  display: flex;
+  align-items: center;
+ 
+}
+/* 
 .container {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centre horizontalement le contenu */
-  margin-left: 230px;
-}
+  justify-content: center; 
+  max-width: 1536px;
+} */
 
 
 .logocrypto1 {
   cursor: pointer;
-  display: flex;
-  width: 5em;
+  width: 90px;
+  height: 90px;
 }
 
 .logoX {
   display: flex;
   cursor: pointer;
-  width: 3em;
+  width: 15px;
+  height: 15px;
 }
 
 .logodiscord {
-  cursor: pointer;
   display: flex;
-  width: 3em;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
 }
+
 
 
 
@@ -68,39 +117,19 @@ header.background {
 
 } */
 
-.menu_item_text { /* Menu Texte */
-    text-decoration: none;
-    color: #ffffff;
-    font-family: "coolvetica rg", sans-serif;
-    font-size: 1.1em;
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    
-}
 
-/* Style The Dropdown Button */
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    
-  }
-  
+
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
     position: relative;
     display: flex;
-    
+    justify-content: center;
   }
   
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
+    top: 20px;
     position: absolute;
     background-color: #f9f9f9;
     width: 100%;
@@ -108,7 +137,11 @@ header.background {
     z-index: 1;
     right: 0;
     padding: 1px;
+    opacity: 0; /* Ajout de l'opacité initiale à 0 */
+    animation: dropdown 0.4s ease-in-out; 
   }
+
+  
   
   /* Links inside the dropdown */
   .dropdown-content a {
@@ -130,6 +163,20 @@ header.background {
   .dropdown:hover .dropdown-content {
     display: block;
     border-radius: 1em; 
+   
+    opacity: 1
+  }
+
+  @keyframes dropdown {
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100%{
+      opacity: 1;
+    }
   }
   
 
@@ -140,7 +187,6 @@ header.background {
     right: 0%;
     transform: rotate(0deg);
     transition: 0.2s ease-in-out all;
-
 }
 
 .communauté:hover .dropdown_header_icon {
@@ -162,9 +208,7 @@ header.background {
 
 .box {
   display: flex;
-  margin-left: auto;
   align-items: center;
-  margin-right: 20em;
   background: #ffffff;
   border-radius: 30px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
@@ -211,9 +255,9 @@ header.background {
   display: flex;
   align-items: center;
   font-family: "coolvetica rg", sans-serif;
-  font-size: 20px;
-  color: #7472ff;
-  
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
 }
 
 
@@ -236,29 +280,38 @@ header.background {
   transition: 0.3s;
 }
 
-h1, h2 {
-   text-align: left;
-   margin-top: 80px;
-   padding-left: 250px;
-   font-family: "coolvetica rg",  sans-serif;
-   color: #ffffff;
-}
-
-body {
-  text-align: center;
-}
 
 .mannft {
-  margin: 0 auto;
-  max-width: 20%;
-  height: auto;
+  max-width: 30%;
   border-radius: 2em;
-  display: block;
+  margin-left: 50px;
 }
 
-.bodycontent {
-  text-align: center;
-  margin-top: 80px;
+.bodycontent{
+  margin: 80px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
+.bodycontent h1{
+  text-align: left; 
+  font-family: "coolvetica rg",  sans-serif;
+  color: #ffffff;
+  font-size: 80px ;
+}
+.bodycontent h2{
+  text-align: left; 
+  font-family: "coolvetica rg",  sans-serif;
+  color: #ffffff;
+  font-size: 40px ;
+}
+
+.bodyconent_child{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
 
