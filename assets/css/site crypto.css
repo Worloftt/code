@@ -5,6 +5,8 @@ html, body {
 }
 
 
+
+
 a {
   text-decoration: none;
   color: white
@@ -19,12 +21,22 @@ p {
     display: flex;
     justify-content: center;
     white-space: nowrap;
+    
+}
+
+.background:hover {
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  
 }
 
 .background-flex{
   display: flex;
   width: 1436px;
   align-items: center;
+  
 }
 
 .container_left{
@@ -47,10 +59,8 @@ p {
   align-items: center;
   font-weight: bold;
   padding-left: 20px;
+
 }
-
-
-
 
 .container_right {
   display: flex;
@@ -318,6 +328,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .bodycontent h1{
@@ -335,7 +346,7 @@ p {
 }
 
 .bodycontent_child {
-    max-width: 700px;
+    max-width: 654px;
     display: flex;
     flex-direction: column;
     align-content: flex-end;
@@ -346,7 +357,61 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
+
+.divider {
+  height: 3px;
+  background-color: rgb(195, 206, 206);
+  width: 0; /* Commencez avec une largeur de 0 */
+  top: 7.1vh;
+  box-shadow: 0px 0px 15px 2px;
+  transform: translateX(-50%);
+  position: relative;
+  left: 100vh;
+  border-radius: 2em;
+  transition: width 1.7s ease; /* Ajoutez une transition pour le width */
+  display: flex;
+}
+
+.divider.expand {
+  width: 70%;
+}
+
+
+.diamond_arrow {
+  height: 46px;
+  position: absolute;
+  top: 89.5%; /* Positionne l'élément au milieu de son conteneur parent */
+  left: 14.9%; /* Positionne l'élément au milieu de son conteneur parent */
+  transform: translate(-50%, -50%); /* Ajuste la position pour centrer correctement */
+  opacity: 0; /* Commencez avec une opacité de 0 */
+  transition: opacity 0.9s ease;
+}
+
+
+
+.diamond_arrow2 {
+  height: 46px;
+  position: absolute;
+  top: 87%; /* Ajustez la position verticale selon vos besoins */
+  right: 14%;
+  opacity: 0; /* Commencez avec une opacité de 0 */
+  transition: opacity 0.9s ease; /* Ajoutez une transition pour l'opacité */
+}
+
+
+
+
+.diamond_arrow.expand,
+.diamond_arrow2.expand {
+  opacity: 1;
+}
+
+
+
+
+
 
 .bodycontent2 h1 {
   text-align: right;
@@ -369,6 +434,7 @@ p {
   align-items: center;
   max-width: 1000px;
 }
+
 
 
 
